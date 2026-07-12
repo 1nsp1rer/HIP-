@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hip-features-score-gui"
+version = "1.0.0"
+description = "HIP feature calculation and fixed Ridge scoring GUI"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy>=1.26,<2", "pandas>=2.1,<3"]
+
+[project.scripts]
+hip-features-score-gui = "hip_features_score_gui.gui:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hip_features_score_gui = ["native/*.pyd", "native/*.dll"]

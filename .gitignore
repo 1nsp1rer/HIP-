@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+!*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+output/
+runtime_outputs/
+temp/
+*.log
+.idea/
+.vscode/
+*_hip_full.csv
